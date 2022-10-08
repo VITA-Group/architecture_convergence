@@ -1,0 +1,5 @@
+# add --dag flag to trigger our method (use dag's effective depth and width to pre-filter bad architectures)
+python search.py --trainval --augtype none --repeat 1 --score hook_logdet --sigma 0.05 --nasspace nasbench201 --dataset cifar10 --data_loc /path/to/dataset/ --GPU 0 --batch_size 128 --api_loc /path/to/NAS-Bench-201-v1_0-e61699.pth
+python search.py --trainval --augtype none --repeat 1 --score hook_logdet --sigma 0.05 --nasspace nasbench201 --dataset cifar100 --data_loc /path/to/dataset/ --GPU 0 --batch_size 128 --api_loc /path/to/NAS-Bench-201-v1_0-e61699.pth
+python search.py --trainval --augtype none --repeat 1 --score hook_logdet --sigma 0.05 --nasspace nasbench201 --dataset ImageNet16-120 --data_loc /path/to/dataset/ImageNet16 --GPU 0 --batch_size 128 --api_loc /path/to/NAS-Bench-201-v1_0-e61699.pth
+python search.py --trainval --augtype none --repeat 1 --score hook_logdet --sigma 0.05 --nasspace nds_darts --dataset imagenet-1k --data_loc /path/to/dataset/imagenet2012 --GPU 0 --batch_size 8
