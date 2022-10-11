@@ -7,6 +7,8 @@ Wuyang Chen*, Wei Huang*, Xinyu Gong, Boris Hanin, Zhangyang Wang
 
 In Neurips 2022.
 
+[code under development]
+
 ## Overview
 
 We link the convergence rate of a network with its architecture topology (connectivity patterns), and further guide the efficient neural architecture design.
